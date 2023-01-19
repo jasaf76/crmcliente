@@ -3,8 +3,8 @@ import fetch from 'isomorphic-fetch'
 import { setContext } from 'apollo-link-context';
 
 const httpLink = createHttpLink({
-    uri: 'https://pacific-bayou-12464.herokuapp.com/',
-    fetch   
+  uri: "https://crm-clientes.herokuapp.com/",
+  fetch,
 });
 
 const authLink = setContext((_, { headers }) => {
